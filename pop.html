@@ -1,0 +1,2205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2nd Lt. A.A. Lawal — Passing Out Parade | Nigerian Defence Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --army-green-deep: #0D170D;
+      --army-green-dark: #142313;
+      --army-green: #1E331D;
+      --army-green-mid: #294427;
+      --army-green-light: #3A5E38;
+      --army-green-tint: #F2F6F1;
+      --army-green-border: rgba(41, 68, 39, 0.25);
+
+      --gold: #C5A059;
+      --gold-bright: #D4AF37;
+      --gold-deep: #9E782F;
+      --gold-light: #F4EBD0;
+      --gold-subtle: rgba(197, 160, 89, 0.14);
+      --gold-border: rgba(197, 160, 89, 0.35);
+
+      --army-red: #A82222;
+      --white: #FFFFFF;
+      --offwhite: #F9FAF8;
+      --dark: #121711;
+      --charcoal: #242B22;
+      --text-muted: #556152;
+      --text-light: #768373;
+
+      --card-shadow: 0 12px 32px rgba(20, 35, 19, 0.08);
+      --card-shadow-hover: 0 20px 44px rgba(20, 35, 19, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--white);
+      color: var(--charcoal);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .display {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      margin: 0;
+      color: var(--army-green-dark);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .wrap {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-title {
+      font-size: clamp(30px, 4.5vw, 44px);
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+      line-height: 1.15;
+      color: var(--army-green-dark);
+    }
+
+    .section-sub {
+      color: var(--text-muted);
+      max-width: 660px;
+      margin-bottom: 52px;
+      font-size: 16.5px;
+      line-height: 1.65;
+    }
+
+    .gold-rule {
+      height: 3px;
+      width: 58px;
+      background: var(--gold);
+      margin: 18px 0 26px;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 70;
+      background: var(--army-green-dark);
+      border-bottom: 1px solid var(--gold-border);
+      box-shadow: 0 6px 24px rgba(13, 23, 13, 0.3);
+    }
+
+    .nav-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .brand {
+      color: var(--white);
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 0.4px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+
+    .brand-title {
+      font-size: 16.5px;
+      color: var(--white);
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-sub {
+      font-size: 10.5px;
+      color: var(--gold);
+      font-family: 'Inter', sans-serif;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navlinks a {
+      color: #E3EAE1;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      transition: color .15s ease;
+    }
+
+    .navlinks a:hover {
+      color: var(--gold-bright);
+    }
+
+    .navlinks a:focus-visible,
+    .brand:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    .burger {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--white);
+      padding: 8px;
+      cursor: pointer;
+      line-height: 0;
+      border-radius: 4px;
+    }
+
+    @media (max-width:840px) {
+      .navlinks {
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: var(--army-green-deep);
+        flex-direction: column;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .28s ease;
+        box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+        border-bottom: 2px solid var(--gold);
+      }
+
+      .navlinks.open {
+        max-height: 380px;
+      }
+
+      .navlinks a {
+        display: block;
+        padding: 16px 28px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        font-size: 15px;
+      }
+
+      .burger {
+        display: block;
+      }
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      background:
+        linear-gradient(180deg, rgba(13, 23, 13, 0.85) 0%, rgba(20, 35, 19, 0.92) 55%, var(--army-green-deep) 100%),
+        url('herobg.png') center/cover no-repeat;
+      border-bottom: 3px solid var(--gold);
+      color: var(--white);
+      padding: 90px 0 100px;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 30%, rgba(197, 160, 89, 0.15) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    @media (max-width:920px) {
+      .hero {
+        padding: 64px 0 76px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .hero-portrait-col {
+        order: -1;
+      }
+    }
+
+    .hero-crest-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--gold-border);
+      backdrop-filter: blur(8px);
+      padding: 8px 16px;
+      border-radius: 30px;
+      color: var(--gold-light);
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .hero-crest-badge img {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+    }
+
+    .hero-eyebrow {
+      font-size: 13px;
+      letter-spacing: 2.5px;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 5.8vw, 66px);
+      line-height: 1.06;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .hero h1 .highlight {
+      color: var(--gold-bright);
+      display: block;
+    }
+
+    .hero p.role {
+      font-size: 18px;
+      color: #D4E0D2;
+      max-width: 560px;
+      line-height: 1.7;
+      margin: 0 0 26px;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 34px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(30, 51, 29, 0.75);
+      border: 1px solid rgba(197, 160, 89, 0.45);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      color: var(--gold-light);
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 7px 14px;
+      border-radius: 4px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold);
+      color: var(--army-green-deep);
+      padding: 16px 32px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      border-radius: 4px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      transition: transform .15s ease, background .15s ease;
+    }
+
+    .hero-cta:hover {
+      background: #E2BA69;
+      transform: translateY(-2px);
+    }
+
+    .hero-secondary-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1.5px solid var(--gold);
+      color: var(--white);
+      padding: 15px 26px;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(6px);
+      transition: all .15s ease;
+    }
+
+    .hero-secondary-cta:hover {
+      background: rgba(197, 160, 89, 0.25);
+      transform: translateY(-1px);
+    }
+
+    /* HERO PORTRAIT CARD */
+    .hero-portrait-card {
+      position: relative;
+      background: var(--army-green-dark);
+      border: 2px solid var(--gold);
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), 0 0 36px rgba(197, 160, 89, 0.25);
+      max-width: 390px;
+      margin: 0 auto;
+    }
+
+    .hero-portrait-card::before {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border: 1px solid rgba(197, 160, 89, 0.3);
+      border-radius: 12px;
+      pointer-events: none;
+    }
+
+    .hero-portrait-inner {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      border-radius: 4px;
+      background: var(--army-green-deep);
+    }
+
+    .hero-portrait-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
+      display: block;
+      transition: transform .45s ease;
+    }
+
+    .hero-portrait-card:hover .hero-portrait-img {
+      transform: scale(1.03);
+    }
+
+    .hero-portrait-footer {
+      padding: 16px 14px 8px;
+      text-align: center;
+      background: var(--army-green-deep);
+      border-top: 1px solid var(--gold-border);
+    }
+
+    .hero-officer-title {
+      font-family: 'Fraunces', serif;
+      color: var(--white);
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-officer-sub {
+      font-size: 12px;
+      color: var(--gold);
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    /* STORY SECTION */
+    .story-section {
+      background: var(--white);
+      border-bottom: 1px solid var(--army-green-border);
+    }
+
+    .story-levels-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+      margin-top: 36px;
+    }
+
+    .story-level-card {
+      background: var(--white);
+      border: 1px solid var(--army-green-border);
+      border-left: 5px solid var(--army-green);
+      border-radius: 12px;
+      padding: 38px;
+      box-shadow: var(--card-shadow);
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      align-items: stretch;
+      transition: box-shadow .2s ease, transform .2s ease, border-left-color .2s ease;
+    }
+
+    .story-level-card:hover {
+      box-shadow: var(--card-shadow-hover);
+      transform: translateY(-2px);
+      border-left-color: var(--gold);
+    }
+
+    .story-level-card.reverse {
+      grid-template-columns: 0.85fr 1.15fr;
+      border-left: 1px solid var(--army-green-border);
+      border-right: 5px solid var(--army-green);
+    }
+
+    .story-level-card.reverse:hover {
+      border-right-color: var(--gold);
+    }
+
+    .story-level-card.reverse .story-level-content {
+      order: 2;
+    }
+
+    .story-level-card.reverse .story-level-media {
+      order: 1;
+    }
+
+    @media (max-width:920px) {
+
+      .story-level-card,
+      .story-level-card.reverse {
+        grid-template-columns: 1fr;
+        padding: 28px 22px;
+        gap: 28px;
+        border-right: none;
+        border-left: 5px solid var(--army-green);
+      }
+
+      .story-level-card.reverse .story-level-content {
+        order: 1;
+      }
+
+      .story-level-card.reverse .story-level-media {
+        order: 2;
+      }
+    }
+
+    .story-level-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .level-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+
+    .level-marker {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--army-green);
+      border: 2px solid var(--gold);
+      color: var(--gold-light);
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .level-tag {
+      font-size: 12px;
+      color: var(--army-green-mid);
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .story-level-content h3 {
+      font-size: 26px;
+      margin-bottom: 14px;
+      color: var(--army-green-dark);
+      line-height: 1.25;
+    }
+
+    .story-level-content p {
+      color: var(--text-muted);
+      font-size: 15.5px;
+      line-height: 1.75;
+      margin: 0 0 14px;
+    }
+
+    .story-level-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .story-highlight-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--army-green-tint);
+      border: 1px solid var(--army-green-border);
+      padding: 7px 16px;
+      border-radius: 4px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--army-green);
+      margin-top: 16px;
+      align-self: flex-start;
+    }
+
+    /* HIGH-END STORY IMAGE DISPLAY (Full Uncropped Rendering) */
+    .story-level-media {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid var(--gold-border);
+      background: var(--army-green-dark);
+      box-shadow: 0 14px 36px rgba(20, 35, 19, 0.18);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .story-img-container {
+      position: relative;
+      width: 100%;
+      height: 490px;
+      background: #081008;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    @media (max-width:920px) {
+      .story-img-container {
+        height: 420px;
+      }
+    }
+
+    @media (max-width:540px) {
+      .story-img-container {
+        height: 360px;
+      }
+    }
+
+    .story-img-backdrop {
+      position: absolute;
+      inset: -20px;
+      background-size: cover;
+      background-position: center;
+      filter: blur(24px) brightness(0.32);
+      transform: scale(1.15);
+      opacity: 0.85;
+      pointer-events: none;
+    }
+
+    .story-img-main {
+      position: relative;
+      z-index: 2;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55);
+      transition: transform .4s ease, filter .3s ease;
+    }
+
+    .story-img-container:hover .story-img-main {
+      transform: scale(1.025);
+    }
+
+    .story-zoom-badge {
+      position: absolute;
+      bottom: 14px;
+      right: 14px;
+      z-index: 4;
+      background: rgba(13, 23, 13, 0.85);
+      border: 1px solid var(--gold);
+      color: var(--gold-bright);
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      backdrop-filter: blur(6px);
+      transition: background .2s ease;
+    }
+
+    .story-img-container:hover .story-zoom-badge {
+      background: var(--gold);
+      color: var(--army-green-deep);
+    }
+
+    .story-media-caption {
+      position: relative;
+      z-index: 3;
+      padding: 13px 18px;
+      background: var(--army-green-deep);
+      color: var(--gold-light);
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border-top: 1px solid rgba(197, 160, 89, 0.3);
+    }
+
+    .story-media-caption span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* GALLERY SECTION */
+    .gallery-section {
+      background: var(--army-green-deep);
+      border-top: 3px solid var(--gold);
+      border-bottom: 3px solid var(--gold);
+      color: var(--white);
+    }
+
+    .gallery-section .section-title {
+      color: var(--white);
+    }
+
+    .gallery-section .section-sub {
+      color: #C3CEC1;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    @media (max-width:980px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+      }
+    }
+
+    @media (max-width:540px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .g-card {
+      background: var(--army-green-dark);
+      border: 1px solid rgba(197, 160, 89, 0.3);
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .g-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+      border-color: var(--gold);
+    }
+
+    .g-card.featured {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    @media (max-width:980px) {
+      .g-card.featured {
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+    }
+
+    @media (max-width:540px) {
+      .g-card.featured {
+        grid-column: span 1;
+      }
+    }
+
+    .g-card-img-wrap {
+      position: relative;
+      overflow: hidden;
+      height: 330px;
+      background: #080E08;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .g-card.featured .g-card-img-wrap {
+      height: 420px;
+    }
+
+    @media (max-width:540px) {
+
+      .g-card-img-wrap,
+      .g-card.featured .g-card-img-wrap {
+        height: 300px;
+      }
+    }
+
+    .g-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
+      display: block;
+      transition: transform .4s ease;
+    }
+
+    .g-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .g-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(13, 23, 13, 0.88);
+      backdrop-filter: blur(6px);
+      border: 1px solid var(--gold);
+      color: var(--gold-bright);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 4px;
+      z-index: 2;
+    }
+
+    .g-card-body {
+      padding: 16px 20px;
+      background: var(--army-green-dark);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border-top: 1px solid rgba(197, 160, 89, 0.25);
+    }
+
+    .g-card-title {
+      font-family: 'Fraunces', serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.3;
+    }
+
+    .g-card-action {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(197, 160, 89, 0.18);
+      color: var(--gold);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background .2s ease, color .2s ease;
+    }
+
+    .g-card:hover .g-card-action {
+      background: var(--gold);
+      color: var(--army-green-deep);
+    }
+
+    /* DRIVE LINK BANNER */
+    .gallery-drive-banner {
+      margin-top: 48px;
+      background: var(--army-green-dark);
+      border: 1.5px solid var(--gold-border);
+      border-radius: 10px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    @media (max-width:780px) {
+      .gallery-drive-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px 20px;
+        gap: 20px;
+      }
+    }
+
+    .drive-banner-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    @media (max-width:780px) {
+      .drive-banner-content {
+        flex-direction: column;
+        gap: 14px;
+      }
+    }
+
+    .drive-icon-wrap {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      background: var(--gold-subtle);
+      border: 1px solid var(--gold);
+      color: var(--gold-bright);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .drive-text-wrap h4 {
+      font-family: 'Fraunces', serif;
+      font-size: 19px;
+      color: var(--white);
+      margin: 0 0 4px;
+    }
+
+    .drive-text-wrap p {
+      color: #C3CEC1;
+      font-size: 14px;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .drive-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold);
+      color: var(--army-green-deep);
+      padding: 14px 26px;
+      font-weight: 700;
+      font-size: 14.5px;
+      text-decoration: none;
+      border-radius: 6px;
+      white-space: nowrap;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+      transition: all .2s ease;
+      flex-shrink: 0;
+    }
+
+    .drive-btn:hover {
+      background: #E2BA69;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(197, 160, 89, 0.35);
+    }
+
+    /* MODAL */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 18, 10, 0.94);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      backdrop-filter: blur(8px);
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-box {
+      background: var(--army-green-dark);
+      max-width: 900px;
+      width: 100%;
+      max-height: 92vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border-radius: 8px;
+      border: 2px solid var(--gold);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+    }
+
+    .modal-img-wrap {
+      background: #070C07;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      max-height: calc(92vh - 76px);
+    }
+
+    .modal-img-wrap img {
+      max-width: 100%;
+      max-height: calc(92vh - 76px);
+      object-fit: contain;
+      display: block;
+    }
+
+    .modal-footer {
+      background: var(--army-green-deep);
+      padding: 16px 24px;
+      border-top: 1px solid var(--gold-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .modal-caption {
+      font-family: 'Fraunces', serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--gold-light);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(13, 23, 13, 0.85);
+      border: 1px solid var(--gold);
+      color: var(--white);
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all .15s;
+      z-index: 10;
+    }
+
+    .modal-close:hover {
+      background: var(--gold);
+      color: var(--army-green-deep);
+    }
+
+    /* LOGISTICS */
+    .getting-there-section {
+      background: var(--white);
+      border-bottom: 1px solid var(--army-green-border);
+    }
+
+    .alert-warning-card {
+      background: var(--army-green-tint);
+      border: 1px solid var(--army-green-border);
+      border-left: 5px solid var(--army-green);
+      border-radius: 6px;
+      padding: 22px 26px;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--charcoal);
+      margin-bottom: 44px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .alert-warning-card .flag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--army-green);
+      margin-top: 2px;
+    }
+
+    .transit-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    @media (max-width:720px) {
+      .transit-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .transit-card {
+      border: 1px solid var(--army-green-border);
+      border-radius: 8px;
+      padding: 28px;
+      background: var(--white);
+      box-shadow: 0 4px 14px rgba(20, 35, 19, 0.04);
+      transition: transform .15s ease, border-color .15s ease;
+    }
+
+    .transit-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--army-green);
+    }
+
+    .transit-card .step-no {
+      font-family: 'Fraunces', serif;
+      color: var(--gold-deep);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .transit-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: var(--army-green-dark);
+    }
+
+    .transit-card p {
+      color: var(--text-muted);
+      font-size: 14.5px;
+      margin: 0;
+      line-height: 1.65;
+    }
+
+    /* GIFTING */
+    .gifting-section {
+      background: var(--army-green-tint);
+      border-bottom: 1px solid var(--army-green-border);
+    }
+
+    .gift-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width:740px) {
+      .gift-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .gift-card {
+      border: 1px solid rgba(41, 68, 39, 0.25);
+      border-radius: 8px;
+      padding: 34px;
+      background: var(--white);
+      box-shadow: var(--card-shadow);
+    }
+
+    .gift-card h3 {
+      font-size: 17px;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      color: var(--army-green);
+      text-transform: uppercase;
+    }
+
+    .acct-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 0;
+      border-top: 1px solid var(--army-green-tint);
+    }
+
+    .acct-row:first-of-type {
+      border-top: none;
+    }
+
+    .acct-label {
+      font-size: 13px;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    .acct-value {
+      font-family: 'Fraunces', serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--army-green-dark);
+    }
+
+    .copy-btn {
+      background: var(--army-green);
+      color: var(--white);
+      border: 1px solid var(--army-green-mid);
+      padding: 9px 18px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 700;
+      border-radius: 4px;
+      transition: all .15s ease;
+    }
+
+    .copy-btn:hover {
+      background: var(--gold);
+      color: var(--army-green-deep);
+    }
+
+    .paystack-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
+      background: var(--army-green);
+      color: var(--white);
+      padding: 15px 28px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      border-radius: 4px;
+      box-shadow: 0 6px 18px rgba(20, 35, 19, 0.25);
+      transition: all .15s ease;
+    }
+
+    .paystack-btn:hover {
+      background: var(--gold);
+      color: var(--army-green-deep);
+      transform: translateY(-1px);
+    }
+
+    /* RSVP */
+    .rsvp-section {
+      background: var(--white);
+    }
+
+    .rsvp-box {
+      background: var(--army-green-dark);
+      color: var(--white);
+      border: 2px solid var(--gold);
+      border-radius: 10px;
+      padding: 54px 48px;
+      max-width: 680px;
+      margin: 0 auto;
+      box-shadow: 0 20px 48px rgba(13, 23, 13, 0.3);
+    }
+
+    @media (max-width:640px) {
+      .rsvp-box {
+        padding: 32px 22px;
+      }
+    }
+
+    .rsvp-box .section-title {
+      text-align: center;
+      font-size: 32px;
+      color: var(--white);
+    }
+
+    .rsvp-box .section-sub {
+      text-align: center;
+      margin: 0 auto 36px;
+      color: #D3DDD2;
+    }
+
+    .field {
+      margin-bottom: 22px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 13.5px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #E6EDE5;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      padding: 13px 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      transition: border-color .15s ease, background .15s ease;
+    }
+
+    .field select option {
+      background: var(--army-green-dark);
+      color: var(--white);
+    }
+
+    .field textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      background: rgba(255, 255, 255, 0.14);
+      box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.25);
+    }
+
+    .radio-row {
+      display: flex;
+      gap: 24px;
+      margin-top: 4px;
+    }
+
+    .radio-row label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14.5px;
+      color: #E6EDE5;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: var(--gold);
+      color: var(--army-green-deep);
+      border: none;
+      padding: 16px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background .15s ease, transform .15s ease;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .submit-btn:hover:not(:disabled) {
+      background: #E2BA69;
+      transform: translateY(-1px);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.6;
+      cursor: progress;
+    }
+
+    .success-msg {
+      display: none;
+      text-align: center;
+      padding: 36px 24px;
+      background: rgba(197, 160, 89, 0.15);
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      margin-top: 16px;
+    }
+
+    .success-msg.show {
+      display: block;
+    }
+
+    .success-msg .check {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+      color: var(--gold);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--army-green-deep);
+      border-top: 3px solid var(--gold);
+      color: #D4E0D2;
+      padding: 84px 0 44px;
+    }
+
+    .appreciation {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .appreciation .crest {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .appreciation .crest img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .appreciation h2 {
+      font-size: clamp(26px, 4vw, 34px);
+      margin-bottom: 18px;
+      color: var(--white);
+    }
+
+    .appreciation p {
+      font-size: 16.5px;
+      line-height: 1.85;
+      color: #CAD8C8;
+    }
+
+    .appreciation .sign {
+      margin-top: 28px;
+      font-family: 'Fraunces', serif;
+      color: var(--gold);
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    .foot-bottom {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      text-align: center;
+      font-size: 13px;
+      color: #8E9F8B;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="#top" class="brand">
+        <img src="ndalogo.png" alt="NDA Crest" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-title">A.A. Lawal</span>
+          <span class="brand-sub">NDA POP · Commissioning 2026</span>
+        </div>
+      </a>
+      <button class="burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <ul class="navlinks" id="navLinks">
+        <li><a href="#story">The 5-Term Journey</a></li>
+        <li><a href="#gallery">Photographs</a></li>
+        <li><a href="#getting-there">Getting There</a></li>
+        <li><a href="#gifting">Gifting</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-crest-badge">
+            <img src="ndalogo.png" alt="NDA Crest">
+            <span>Nigerian Defence Academy · Afaka, Kaduna</span>
+          </div>
+          <div class="hero-eyebrow">PASSING OUT PARADE · COMMISSIONING 2026</div>
+          <h1>2nd Lieutenant<br><span class="highlight">Adam Ayomide Lawal</span></h1>
+          <p class="role">From the gates of Afaka to the officers' rank of the Armed Forces. Five terms of discipline,
+            academic rigor, tactical mastery, and selfless service. Join us as we celebrate this historic commissioning.
+          </p>
+          <div class="hero-badges">
+            <span class="hero-badge">Rank: Second Lieutenant</span>
+            <span class="hero-badge">Officer Cadet A.A. Lawal</span>
+            <span class="hero-badge">Dalet Battalion</span>
+            <span class="hero-badge">Commissioning Class 2026</span>
+          </div>
+          <div class="hero-actions">
+            <a href="#rsvp" class="hero-cta">RSVP &amp; Send Wishes &rarr;</a>
+            <a href="#story" class="hero-secondary-cta">Explore The 5 Terms</a>
+          </div>
+        </div>
+        <div class="hero-portrait-col">
+          <div class="hero-portrait-card">
+            <div class="hero-portrait-inner">
+              <img src="image copy 6.png" alt="2nd Lieutenant Adam Ayomide Lawal (A.A. Lawal)"
+                class="hero-portrait-img">
+            </div>
+            <div class="hero-portrait-footer">
+              <div class="hero-officer-title">2nd Lt. A.A. Lawal</div>
+              <div class="hero-officer-sub">Adam Ayomide Lawal · Commissioned Officer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section story-section" id="story">
+    <div class="wrap">
+      <div class="section-title">The Five-Term Crucible</div>
+      <div class="section-sub">A comprehensive chronicle of the rigorous training pipeline at the Nigerian Defence
+        Academy, Afaka — forging civilian ambition into military leadership. Tap any image for high-resolution view.
+      </div>
+      <div class="gold-rule"></div>
+
+      <div class="story-levels-wrap">
+
+        <!-- LEVEL 1: term1.png -->
+        <div class="story-level-card">
+          <div class="story-level-content">
+            <div class="level-header">
+              <div class="level-marker">1</div>
+              <span class="level-tag">TERMER ONE · THE TRANSITION</span>
+            </div>
+            <h3>The Crucible &amp; De-Civilianization</h3>
+            <p>The journey commenced at the historic gates of the Nigerian Defence Academy in Afaka, Kaduna. Stepping
+              into Term One demanded the total relinquishing of civilian comforts in exchange for relentless military
+              regimentation. Pre-dawn bugle calls at 0430 hours began each day with punishing Physical Training (PT),
+              speed marches across Ribadu campus, and endurance drills under stern Academy instructors.</p>
+            <p>On the sacred drill square, recruits learned precision foot drills in uniform, absolute obedience, rifle
+              handling, and the foundational Academy ethos: <em>Loyalty and Valour</em>.</p>
+            <div class="story-highlight-pill">Key Focus: Drill Square Discipline, Physical Conditioning, Academy Ethos
+            </div>
+          </div>
+          <div class="story-level-media">
+            <div class="story-img-container" data-img="term1.png"
+              data-caption="Termer One: Drill Square formation &amp; green tunic uniforms">
+              <div class="story-img-backdrop" style="background-image:url('term1.png');"></div>
+              <img src="term1.png" alt="Termer One parade formation — Cadets in olive uniform" class="story-img-main"
+                loading="lazy">
+              <span class="story-zoom-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Tap to Enlarge</span>
+              </span>
+            </div>
+            <div class="story-media-caption">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+                <span>Termer One: Drill Square parade formation</span>
+              </span>
+              <span style="font-size:11px;color:var(--gold);font-weight:700;">FULL VIEW</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEVEL 2: term2.png -->
+        <div class="story-level-card reverse">
+          <div class="story-level-content">
+            <div class="level-header">
+              <div class="level-marker">2</div>
+              <span class="level-tag">TERMER TWO · FOUNDATIONS &amp; BATTALION</span>
+            </div>
+            <h3>Academic Rigor &amp; Dalet Battalion Spirit</h3>
+            <p>Term Two brought the rigorous fusion of demanding degree-level academic coursework and tactical military
+              doctrine. Days were divided between engineering, defense studies, and grueling field exercises in the
+              Kaduna bush.</p>
+            <p>Inducted proudly into <strong>Dalet Battalion</strong>, Cadet A.A. Lawal embraced the battalion's
+              legendary motto: <em>Adaptability and Teamwork</em>. Mastering map reading, tactical camouflage,
+              navigation, and endurance patrols, the cadet identity took permanent root.</p>
+            <div class="story-highlight-pill">Key Focus: Dalet Battalion Spirit, Topographical Navigation, Bush Tactics
+            </div>
+          </div>
+          <div class="story-level-media">
+            <div class="story-img-container" data-img="term2.png"
+              data-caption="Termer Two: Dalet Battalion — Adaptability and Teamwork">
+              <div class="story-img-backdrop" style="background-image:url('term2.png');"></div>
+              <img src="term2.png" alt="Termer Two — Cadet A.A. Lawal by Dalet Battalion board" class="story-img-main"
+                loading="lazy">
+              <span class="story-zoom-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Tap to Enlarge</span>
+              </span>
+            </div>
+            <div class="story-media-caption">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+                <span>Termer Two: Dalet Battalion — "Adaptability and Teamwork"</span>
+              </span>
+              <span style="font-size:11px;color:var(--gold);font-weight:700;">FULL VIEW</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEVEL 3: term3.png -->
+        <div class="story-level-card">
+          <div class="story-level-content">
+            <div class="level-header">
+              <div class="level-marker">3</div>
+              <span class="level-tag">TERMER THREE · THE FORGE</span>
+            </div>
+            <h3>Tactical Mastery &amp; Comrades in Arms</h3>
+            <p>As the middle stretch of training peaked, the physical and mental demands escalated drastically. Battle
+              Physical Efficiency Tests (BPET), assault obstacle courses, tactical river crossings, and live section
+              attack drills tested character to its core.</p>
+            <p>Cadet Lawal exemplified deep composure and mental tenacity, seated firmly in the Dalet heritage. In this
+              demanding forge, the profound brotherhood of military service was cemented among comrades who shared every
+              drop of sweat, water canteen, and tactical trial.</p>
+            <div class="story-highlight-pill">Key Focus: Battle Fitness Tests, Section Attacks, Esprit de Corps</div>
+          </div>
+          <div class="story-level-media">
+            <div class="story-img-container" data-img="term3.png"
+              data-caption="Termer Three: Focus &amp; character in the Dalet Battalion quarters">
+              <div class="story-img-backdrop" style="background-image:url('term3.png');"></div>
+              <img src="term3.png" alt="Termer Three — Cadet A.A. Lawal seated in Dalet Panther Hall"
+                class="story-img-main" loading="lazy">
+              <span class="story-zoom-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Tap to Enlarge</span>
+              </span>
+            </div>
+            <div class="story-media-caption">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+                <span>Termer Three: Focus in the Dalet Battalion quarters</span>
+              </span>
+              <span style="font-size:11px;color:var(--gold);font-weight:700;">FULL VIEW</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEVEL 4: term4.png -->
+        <div class="story-level-card reverse">
+          <div class="story-level-content">
+            <div class="level-header">
+              <div class="level-marker">4</div>
+              <span class="level-tag">TERMER FOUR · LEADERSHIP &amp; COMMAND</span>
+            </div>
+            <h3>Senior Cadet Authority &amp; Combat Readiness</h3>
+            <p>Stepping into senior cadet appointments with yellow/gold chevron brassards, Term Four transitioned Cadet
+              Lawal from executing directives to conceiving, commanding, and coordinating tactical missions. Senior
+              cadets oversaw junior cohorts and led advanced field maneuvers.</p>
+            <p>Wearing combat ballistic helmets with camouflage netting, Senior Cadet A.A. Lawal and his senior peers
+              stood prepared for combat readiness, live-fire battle orders, and rapid tactical deployments under intense
+              operational pressure.</p>
+            <div class="story-highlight-pill">Key Focus: Senior Rank Brassards, Platoon Command, Ballistic Combat
+              Readiness</div>
+          </div>
+          <div class="story-level-media">
+            <div class="story-img-container" data-img="term4.png"
+              data-caption="Termer Four: Senior Cadets with tactical helmets &amp; command stripes">
+              <div class="story-img-backdrop" style="background-image:url('term4.png');"></div>
+              <img src="term4.png" alt="Termer Four — Senior Cadets holding combat helmets with netting"
+                class="story-img-main" loading="lazy">
+              <span class="story-zoom-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Tap to Enlarge</span>
+              </span>
+            </div>
+            <div class="story-media-caption">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+                <span>Termer Four: Senior Cadets with tactical helmets</span>
+              </span>
+              <span style="font-size:11px;color:var(--gold);font-weight:700;">FULL VIEW</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEVEL 5: term5.png -->
+        <div class="story-level-card">
+          <div class="story-level-content">
+            <div class="level-header">
+              <div class="level-marker">5</div>
+              <span class="level-tag">TERMER FIVE · CAMP HIGHLAND &amp; COMMISSION</span>
+            </div>
+            <h3>Camp Highland &amp; The Commissioning Parade</h3>
+            <p>The ultimate baptism of military readiness: <strong>Exercise Camp Highland</strong>. Stretching across
+              the unforgiving highlands and rugged bush of Kachia, Jos, and Kaduna, cadets undertook grueling mountain
+              climbs, multi-day tactical survival drills, and long-range tactical marches in full fighting kit.</p>
+            <p>Having conquered every test with unshakeable resolve, Cadet Adam Ayomide Lawal marched proudly onto the
+              Afaka parade ground before the Commander-in-Chief and cheering families. Stepping onto the parade ground
+              as a cadet and marching off as a commissioned <strong>Second Lieutenant</strong> in the Armed Forces of
+              Nigeria.</p>
+            <div class="story-highlight-pill">Key Focus: Camp Highland, Live-Firing Maneuvers, Presidential
+              Commissioning</div>
+          </div>
+          <div class="story-level-media">
+            <div class="story-img-container" data-img="term5.png"
+              data-caption="Termer Five: Final term readiness — Name tag: A.A. LAWAL">
+              <div class="story-img-backdrop" style="background-image:url('term5.png');"></div>
+              <img src="term5.png" alt="Termer Five — Cadet A.A. Lawal close-up in bush hat and camo"
+                class="story-img-main" loading="lazy">
+              <span class="story-zoom-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Tap to Enlarge</span>
+              </span>
+            </div>
+            <div class="story-media-caption">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+                <span>Termer Five: Final term readiness — A.A. LAWAL</span>
+              </span>
+              <span style="font-size:11px;color:var(--gold);font-weight:700;">FULL VIEW</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery-section" id="gallery">
+    <div class="wrap">
+      <div class="section-title">Photographs &amp; Milestones</div>
+      <div class="section-sub">A curated gallery celebrating the training, camaraderie, academic milestones, and
+        celebratory moments of 2nd Lt. Adam Ayomide Lawal. Tap any photo for full view.</div>
+      <div class="gold-rule"></div>
+
+      <div class="gallery-grid" id="galleryGrid">
+
+        <!-- ITEM 1: FEATURED MESS NIGHT (herobg.png) -->
+        <div class="g-card featured" data-img="herobg.png" data-caption="Officers' Mess Night Celebration at NDA Afaka">
+          <div class="g-card-img-wrap">
+            <span class="g-badge">Celebration</span>
+            <img src="herobg.png" alt="Officers' Mess Night Celebration at NDA Afaka" loading="lazy">
+          </div>
+          <div class="g-card-body">
+            <div class="g-card-title">Officers' Mess Night Celebration at NDA</div>
+            <div class="g-card-action">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="8" x2="11" y2="14"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 2: AWARD CEREMONY (competitonwin.png) -->
+        <div class="g-card" data-img="competitonwin.png"
+          data-caption="Official Award Presentation &amp; Commendation Ceremony">
+          <div class="g-card-img-wrap" style="background:#0D170D;">
+            <span class="g-badge">Honours</span>
+            <img src="competitonwin.png" alt="Official Award Presentation &amp; Commendation Ceremony"
+              style="object-position:center top;" loading="lazy">
+          </div>
+          <div class="g-card-body">
+            <div class="g-card-title">Award Handshake &amp; Medal Commendation</div>
+            <div class="g-card-action">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 3: COMMISSIONING PORTRAIT (image copy 6.png) -->
+        <div class="g-card" data-img="image copy 6.png"
+          data-caption="Commissioning Day Portrait — 2nd Lt. Adam Ayomide Lawal">
+          <div class="g-card-img-wrap">
+            <span class="g-badge">Portrait</span>
+            <img src="image copy 6.png" alt="Commissioning Day Portrait — 2nd Lt. Adam Ayomide Lawal"
+              style="object-position:center 12%;" loading="lazy">
+          </div>
+          <div class="g-card-body">
+            <div class="g-card-title">Officer Portrait: 2nd Lt. A.A. Lawal</div>
+            <div class="g-card-action">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 4: GALLERY 1 (Senior Cadets) -->
+        <div class="g-card" data-img="gallery1.png" data-caption="Senior Cadets with Combat Ballistic Helmets">
+          <div class="g-card-img-wrap">
+            <span class="g-badge">Readiness</span>
+            <img src="gallery1.png" alt="Senior Cadets with Combat Ballistic Helmets"
+              style="object-position:center 10%;" loading="lazy">
+          </div>
+          <div class="g-card-body">
+            <div class="g-card-title">Senior Cadets Tactical Readiness</div>
+            <div class="g-card-action">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 5: GALLERY 2 (Trio Cadets) -->
+        <div class="g-card" data-img="gallery2.png" data-caption="Cadet Comrades under Battalion Hall of Fame">
+          <div class="g-card-img-wrap">
+            <span class="g-badge">Battalion</span>
+            <img src="gallery2.png" alt="Cadet Comrades under Battalion Hall of Fame"
+              style="object-position:center 15%;" loading="lazy">
+          </div>
+          <div class="g-card-body">
+            <div class="g-card-title">Cadet Comrades at Battalion Hall</div>
+            <div class="g-card-action">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 6: GALLERY 3 (Red Hackles Comrades) -->
+        <div class="g-card" data-img="gallery3.png"
+          data-caption="Brothers in Arms: Cadet GA Odeyemi and Cadet AA Lawal">
+          <div class="g-card-img-wrap">
+            <span class="g-badge">Brotherhood</span>
+            <img src="gallery3.png" alt="Brothers in Arms: Cadet GA Odeyemi and Cadet AA Lawal"
+              style="object-position:center 8%;" loading="lazy">
+          </div>
+          <div class="g-card-body">
+            <div class="g-card-title">Cadet A.A. Lawal &amp; Cadet Odeyemi</div>
+            <div class="g-card-action">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 7: GALLERY 4 (Cadet Lawal Smiling) -->
+        <div class="g-card" data-img="gallery4.png" data-caption="Cadet A.A. Lawal in Camouflage and Bush Hat">
+          <div class="g-card-img-wrap">
+            <span class="g-badge">Academy</span>
+            <img src="gallery4.png" alt="Cadet A.A. Lawal in Camouflage and Bush Hat" style="object-position:center 8%;"
+              loading="lazy">
+          </div>
+          <div class="g-card-body">
+            <div class="g-card-title">Cadet A.A. Lawal: Service &amp; Smile</div>
+            <div class="g-card-action">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 8: BEFORE NDA (beforeNDA.png) -->
+        <div class="g-card" data-img="beforeNDA.png" data-caption="Memories: Adam Ayomide Lawal before NDA">
+          <div class="g-card-img-wrap">
+            <span class="g-badge">Origins</span>
+            <img src="beforeNDA.png" alt="Memories: Adam Ayomide Lawal before NDA" style="object-position:center 12%;"
+              loading="lazy">
+          </div>
+          <div class="g-card-body">
+            <div class="g-card-title">Origins: Before The Afaka Gates</div>
+            <div class="g-card-action">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- GOOGLE DRIVE PHOTO ARCHIVE LINK -->
+      <div class="gallery-drive-banner">
+        <div class="drive-banner-content">
+          <div class="drive-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              <line x1="12" y1="11" x2="12" y2="17"></line>
+              <line x1="9" y1="14" x2="15" y2="14"></line>
+            </svg>
+          </div>
+          <div class="drive-text-wrap">
+            <h4>View The Complete Photo Archive</h4>
+            <p>Access the full collection of high-resolution ceremony photos, parade formations, banquet portraits, and
+              candid academy memories on Google Drive.</p>
+          </div>
+        </div>
+        <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer" class="drive-btn"
+          id="driveLinkBtn">
+          <span>Open Google Drive Album</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-img-wrap">
+        <img id="modalImg" src="" alt="Enlarged photo view">
+      </div>
+      <div class="modal-footer">
+        <div class="modal-caption" id="modalCaption"></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section getting-there-section" id="getting-there">
+    <div class="wrap">
+      <div class="section-title">Getting There</div>
+      <div class="section-sub">The Passing Out Parade takes place within the NDA Afaka Campus, Kaduna. Please note the
+        entry protocols and transport details below.</div>
+      <div class="gold-rule"></div>
+
+      <div class="alert-warning-card">
+        <span class="flag">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+        </span>
+        <span><strong>Strict Security Notice:</strong> Entry to the Academy grounds is strictly by official invitation
+          card. Every adult guest must present a physical invitation pass along with a valid government-issued ID at the
+          gate. Please arrive early to clear security inspection.</span>
+      </div>
+
+      <div class="transit-grid">
+        <div class="transit-card">
+          <div class="step-no">STEP 1</div>
+          <h3>From Mando / Kawo Park</h3>
+          <p>Board a registered vehicle or taxi heading towards Airport Road. Both motor parks operate frequent shuttles
+            on this route — inform the driver you are stopping at "NDA Main Gate, Afaka."</p>
+        </div>
+        <div class="transit-card">
+          <div class="step-no">STEP 2</div>
+          <h3>Along Airport Road</h3>
+          <p>Stay along Airport Road past the National Eye Centre corridor until you arrive at the NDA Afaka Main Gate,
+            which features prominent military sentry towers and signages.</p>
+        </div>
+        <div class="transit-card">
+          <div class="step-no">STEP 3</div>
+          <h3>Security Clearance Gate</h3>
+          <p>Proceed to the visitor clearance pavilion. Present your physical invitation card and identification to
+            military police personnel for credential verification and tagging.</p>
+        </div>
+        <div class="transit-card">
+          <div class="step-no">STEP 4</div>
+          <h3>Internal Parade Shuttle</h3>
+          <p>Once cleared through security, board the official internal Academy shuttle buses that run continuously to
+            the main parade grounds and guest grandstands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gifting-section" id="gifting">
+    <div class="wrap">
+      <div class="section-title">Gifting Towards The New Officer</div>
+      <div class="section-sub">If you wish to honor and bless 2nd Lt. Adam Ayomide Lawal as he embarks on his
+        commissioned military service, your support is warmly appreciated.</div>
+      <div class="gold-rule"></div>
+
+      <div class="gift-grid">
+        <div class="gift-card">
+          <h3>Direct Bank Transfer</h3>
+          <div class="acct-row">
+            <div>
+              <div class="acct-label">Account Number</div>
+              <div class="acct-value">8172561885</div>
+            </div>
+            <button class="copy-btn" data-copy="8172561885">Copy Number</button>
+          </div>
+          <div class="acct-row">
+            <div>
+              <div class="acct-label">Bank</div>
+              <div class="acct-value" style="font-size:16px;">Placeholder Bank Plc</div>
+            </div>
+          </div>
+          <div class="acct-row">
+            <div>
+              <div class="acct-label">Account Name</div>
+              <div class="acct-value" style="font-size:16.5px;">Adam Ayomide Lawal</div>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card">
+          <h3>Online Giving</h3>
+          <p style="color:var(--text-muted);font-size:15px;margin-bottom:12px;line-height:1.6;">For convenient card
+            payments, mobile transfers, or international credit card contributions, use our secure online Paystack link.
+          </p>
+          <a href="#" class="paystack-btn" id="paystackBtn">
+            <span>Give via Paystack</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section rsvp-section" id="rsvp">
+    <div class="wrap">
+      <div class="rsvp-box">
+        <div class="section-title">RSVP &amp; Send Wishes</div>
+        <div class="section-sub">Please let us know if you will be joining us in person, and send your congratulatory
+          prayers and messages to the newly commissioned officer.</div>
+
+        <form id="rsvpForm">
+          <div class="field">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="field">
+            <label for="guests">Number of Guests (including yourself)</label>
+            <select id="guests" name="guests">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Will you be attending the ceremony?</label>
+            <div class="radio-row">
+              <label><input type="radio" name="attending" value="yes" checked> Yes, I will attend</label>
+              <label><input type="radio" name="attending" value="no"> Regretfully unable to attend</label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="wishes">Congratulatory Message / Prayer</label>
+            <textarea id="wishes" name="wishes"
+              placeholder="Write your heartfelt congratulations or tribute for 2nd Lt. Adam Ayomide Lawal..."></textarea>
+          </div>
+          <button type="submit" class="submit-btn" id="submitBtn">Submit RSVP &amp; Message</button>
+        </form>
+
+        <div class="success-msg" id="successMsg">
+          <div class="check">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div
+            style="color:var(--white);font-family:'Fraunces',serif;font-size:20px;font-weight:700;margin-bottom:6px;">
+            Thank You</div>
+          <div style="color:#D3DDD2;font-size:15px;">Your RSVP and wishes for 2nd Lt. Adam Ayomide Lawal have been
+            received with deep appreciation.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap appreciation">
+      <div class="crest">
+        <img src="ndalogo.png" alt="Nigerian Defence Academy Logo">
+      </div>
+      <h2>With Eternal Gratitude</h2>
+      <p>To every teacher, family member, mentor, friend, and comrade who supported Adam Ayomide through five demanding
+        terms of pre-dawn physical training, relentless drills, rigorous exams, and grueling exercises across Kaduna and
+        beyond — thank you. Your prayers and guidance sustained him to this day of glory. We are honored to celebrate
+        this moment with you.</p>
+      <div class="sign">The Lawal Family</div>
+      <div class="foot-bottom">Passing Out Parade · Nigerian Defence Academy, Afaka Campus, Kaduna · Commissioning Class
+        2026</div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation drawer toggle
+    const burger = document.getElementById('burgerBtn');
+    const navLinks = document.getElementById('navLinks');
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      const expanded = navLinks.classList.contains('open');
+      burger.setAttribute('aria-expanded', expanded);
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    }));
+
+    // Image lightbox modal (Works for both gallery cards AND story images)
+    const modalBackdrop = document.getElementById('modalBackdrop');
+    const modalImg = document.getElementById('modalImg');
+    const modalCaption = document.getElementById('modalCaption');
+    const modalClose = document.getElementById('modalClose');
+
+    const openModal = (src, caption) => {
+      if (src) {
+        modalImg.src = src;
+        modalImg.alt = caption;
+        modalCaption.textContent = caption;
+        modalBackdrop.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+    };
+
+    document.querySelectorAll('.g-card, .story-img-container').forEach(item => {
+      item.addEventListener('click', () => {
+        openModal(item.dataset.img, item.dataset.caption || '');
+      });
+    });
+
+    const closeModal = () => {
+      modalBackdrop.classList.remove('open');
+      document.body.style.overflow = '';
+    };
+
+    modalClose.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', (e) => {
+      if (e.target === modalBackdrop) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modalBackdrop.classList.contains('open')) {
+        closeModal();
+      }
+    });
+
+    // Copy bank account number to clipboard
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(btn.dataset.copy);
+          const orig = btn.textContent;
+          btn.textContent = 'Copied!';
+          setTimeout(() => btn.textContent = orig, 1800);
+        } catch (e) {
+          /* clipboard fallback */
+        }
+      });
+    });
+
+    // RSVP submission
+    const form = document.getElementById('rsvpForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const successMsg = document.getElementById('successMsg');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting...';
+      setTimeout(() => {
+        form.style.display = 'none';
+        successMsg.classList.add('show');
+      }, 850);
+    });
+  </script>
+</body>
+
+</html>
